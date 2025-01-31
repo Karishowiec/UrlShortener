@@ -3,6 +3,9 @@ package com.goit.url_shortener.security;
 import com.goit.url_shortener.user.User;
 import com.goit.url_shortener.user.UserRepository;
 import lombok.RequiredArgsConstructor;
+import org.springframework.context.annotation.Bean;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;
@@ -17,6 +20,11 @@ public class AuthorizationService {
     private final UserRepository userRepository;
 
     private final JwtTokenProvider tokenProvider;
+
+    @Bean
+    public PasswordEncoder passwordEncoder() {
+        return new BCryptPasswordEncoder();
+    }
 
     /**
      * Extracts the authorized user from the provided authorization header.
