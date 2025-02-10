@@ -1,4 +1,4 @@
-package com.goit.url_shortener.documentation;
+package com.goit.url_shortener.controller;
 
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.http.HttpHeaders;

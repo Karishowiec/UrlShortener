@@ -1,5 +1,7 @@
 package com.goit.url_shortener.url;
 
+import com.goit.url_shortener.controller.UrlController;
+import com.goit.url_shortener.service.UrlService;
 import com.goit.url_shortener.url.dto.UrlRequest;
 import com.goit.url_shortener.url.dto.UrlResponse;
 import org.junit.jupiter.api.Test;

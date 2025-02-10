@@ -1,5 +1,7 @@
-package com.goit.url_shortener.url;
+package com.goit.url_shortener.controller;
 
+import com.goit.url_shortener.repository.UrlRepository;
+import com.goit.url_shortener.service.UrlService;
 import com.goit.url_shortener.url.dto.UrlRequest;
 import com.goit.url_shortener.url.dto.UrlResponse;
 import lombok.RequiredArgsConstructor;
@@ -31,6 +33,7 @@ import org.springframework.web.bind.annotation.*;
 public class UrlController {
 
     private final UrlService urlService;
+    private final UrlRepository urlRepository;
 
     /**
      * Endpoint to shorten a long URL.
@@ -116,4 +119,14 @@ public class UrlController {
         UrlResponse response = urlService.deleteUrl(request);
         return ResponseEntity.status(response.getStatus()).body(response);
     }
+//    @GetMapping("/{code}")
+//    public String redirect(@PathVariable("code") String code) {
+//        String longUrl = String.valueOf(urlRepository.findUrlByShortUrl(code));
+//        if (longUrl != null) {
+//            return "redirect:" + longUrl;
+//        } else {
+//
+//            throw new ResponseStatusException(HttpStatus.NOT_FOUND, "URL not found");
+//        }
+//    }
 }

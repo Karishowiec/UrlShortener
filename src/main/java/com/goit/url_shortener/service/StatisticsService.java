@@ -1,8 +1,9 @@
-package com.goit.url_shortener.statistics;
+package com.goit.url_shortener.service;
 
-import com.goit.url_shortener.security.AuthorizationService;
+import com.goit.url_shortener.repository.StatisticsResponse;
+import com.goit.url_shortener.statistics.StatsUrlDto;
 import com.goit.url_shortener.url.Url;
-import com.goit.url_shortener.url.UrlRepository;
+import com.goit.url_shortener.repository.UrlRepository;
 import com.goit.url_shortener.url.dto.UrlRequest;
 import com.goit.url_shortener.user.User;
 import lombok.RequiredArgsConstructor;

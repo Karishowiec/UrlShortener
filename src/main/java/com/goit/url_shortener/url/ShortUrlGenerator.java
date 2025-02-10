@@ -52,7 +52,7 @@ public class ShortUrlGenerator {
             int randomIndex = random.nextInt(CHARACTERS.length);
             shortUrl.append(CHARACTERS[randomIndex]);
         }
-        return "https://" + shortUrl;
+        return "http://localhost:8080/api/v1/url/" + shortUrl;
     }
 }
 

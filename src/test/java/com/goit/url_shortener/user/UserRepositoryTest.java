@@ -1,6 +1,7 @@
 package com.goit.url_shortener.user;
 
 
+import com.goit.url_shortener.repository.UserRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

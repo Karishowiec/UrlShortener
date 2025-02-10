@@ -1,7 +1,8 @@
-package com.goit.url_shortener.security;
+package com.goit.url_shortener.service;
 
+import com.goit.url_shortener.security.JwtTokenProvider;
 import com.goit.url_shortener.user.User;
-import com.goit.url_shortener.user.UserRepository;
+import com.goit.url_shortener.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;

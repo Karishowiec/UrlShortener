@@ -1,5 +1,7 @@
-package com.goit.url_shortener.statistics;
+package com.goit.url_shortener.controller;
 
+import com.goit.url_shortener.repository.StatisticsResponse;
+import com.goit.url_shortener.service.StatisticsService;
 import com.goit.url_shortener.url.dto.UrlRequest;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
