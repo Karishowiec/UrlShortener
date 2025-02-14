@@ -2,20 +2,21 @@ package com.goit.url_shortener.controller;
 
 import com.goit.url_shortener.service.RedirectService;
 import com.goit.url_shortener.url.Url;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/api/v1/url") // Базовий шлях
 public class RedirectController {
 
     private final RedirectService redirectService;
+    @Value("${app.base-url}")
+    private String baseUrl;
 
     // Конструкторна ін'єкція
     public RedirectController(RedirectService redirectService) {
@@ -24,7 +25,7 @@ public class RedirectController {
 
     @GetMapping("/{code}")
     public ResponseEntity<Void> redirect(@PathVariable("code") String code) {
-        Optional<Url> url = redirectService.findUrlByShortUrl(code);
+        Optional<Url> url = redirectService.findUrlByShortUrl(String.format("%s/%s", baseUrl, code));
 
         if (url.isPresent()) {
             return ResponseEntity
