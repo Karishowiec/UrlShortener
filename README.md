@@ -8,9 +8,9 @@
 4. [Installation Guide](#installation-guide)
 5. [Configuration](#configuration)
 6. [API Documentation](#api-documentation)
-    - [Authentication](#authentication)
-    - [URL Operations](#url-operations)
-    - [URL Statistics](#url-statistics)
+	- [Authentication](#authentication)
+	- [URL Operations](#url-operations)
+	- [URL Statistics](#url-statistics)
 7. [Security](#security)
 
 - - -
@@ -131,9 +131,9 @@ For more detailed information and the ability to test the API, you can go to the
 
 - **Possible Errors:**
 
-    - **400: Bad Request.**
+  - **400: Bad Request.**
 
-    - **409: Conflict.**
+  - **409: Conflict.**
 
 ##### Login User
 
@@ -159,7 +159,7 @@ For more detailed information and the ability to test the API, you can go to the
 
 - **Possible Errors:**
 
-    - **401: Unauthorized.**
+   - **401: Unauthorized.**
 
 #### URL Operations
 
@@ -190,9 +190,9 @@ For more detailed information and the ability to test the API, you can go to the
 
 - **Possible Errors:**
 
-    - **400: Invalid URL or expiration date.**
+	- **400: Invalid URL or expiration date.**
 
-    - **401: Unauthorized access.**
+	- **401: Unauthorized access.**
 
 ##### Retrieve Original URL
 
@@ -220,13 +220,13 @@ For more detailed information and the ability to test the API, you can go to the
 
 - **Possible Errors:**
 
-    - **400: Empty or null URL.**
+	- **400: Empty or null URL.**
+	
+	- **401: Unauthorized access.**
 
-    - **401: Unauthorized access.**
+	- **404: URL not found.**
 
-    - **404: URL not found.**
-
-    - **410: URL expired.**
+	- **410: URL expired.**
 
 ##### Update Shortened URL
 
@@ -251,9 +251,9 @@ For more detailed information and the ability to test the API, you can go to the
 
 - **Possible Errors:**
 
-    - **401: Unauthorized access.**
+	- **401: Unauthorized access.**
 
-    - **404: URL not found.**
+	- **404: URL not found.**
 
 ##### Delete URL
 
@@ -277,9 +277,9 @@ For more detailed information and the ability to test the API, you can go to the
 
 - **Possible Errors:**
 
-    - **401: Unauthorized access.**
+	- **401: Unauthorized access.**
 
-    - **404: URL not found.**
+	- **404: URL not found.**
 
 #### URL Statistics
 
@@ -301,9 +301,9 @@ For more detailed information and the ability to test the API, you can go to the
 
 - **Possible Errors:**
 
-    - **401: Unauthorized access.**
+	- **401: Unauthorized access.**
 
-    - **404: No data found.**
+	- **404: No data found.**
 
 ##### Get Active URLs
 
@@ -323,9 +323,9 @@ For more detailed information and the ability to test the API, you can go to the
 
 - **Possible Errors:**
 
-    - **401: Unauthorized access.**
+	- **401: Unauthorized access.**
 
-    - **404: No data found.**
+	- **404: No data found.**
 
 ##### Get Visit Statistics
 
@@ -349,9 +349,9 @@ For more detailed information and the ability to test the API, you can go to the
 
 - **Possible Errors:**
 
-    - **401: Unauthorized access.**
+	- **401: Unauthorized access.**
 
-    - **404: URL not found.**
+	- **404: URL not found.**
 
 - - -
 

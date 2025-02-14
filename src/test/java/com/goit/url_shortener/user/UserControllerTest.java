@@ -1,5 +1,7 @@
 package com.goit.url_shortener.user;
 
+import com.goit.url_shortener.controller.UserController;
+import com.goit.url_shortener.service.UserServiceImpl;
 import com.goit.url_shortener.user.dto.AuthUserResponse;
 import com.goit.url_shortener.user.dto.RegisterUserResponse;
 import com.goit.url_shortener.user.dto.UserRequest;

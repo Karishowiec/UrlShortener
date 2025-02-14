@@ -1,6 +1,8 @@
 package com.goit.url_shortener.url;
 
-import com.goit.url_shortener.security.AuthorizationService;
+import com.goit.url_shortener.repository.UrlRepository;
+import com.goit.url_shortener.service.AuthorizationService;
+import com.goit.url_shortener.service.UrlServiceImpl;
 import com.goit.url_shortener.url.dto.UrlRequest;
 import com.goit.url_shortener.url.dto.UrlResponse;
 import com.goit.url_shortener.user.User;

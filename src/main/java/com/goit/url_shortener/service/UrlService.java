@@ -1,4 +1,4 @@
-package com.goit.url_shortener.url;
+package com.goit.url_shortener.service;
 
 import com.goit.url_shortener.url.dto.UrlRequest;
 import com.goit.url_shortener.url.dto.UrlResponse;

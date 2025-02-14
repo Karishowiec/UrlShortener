@@ -1,6 +1,7 @@
-package com.goit.url_shortener.url;
+package com.goit.url_shortener.repository;
 
 
+import com.goit.url_shortener.url.Url;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;

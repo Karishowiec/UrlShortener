@@ -1,5 +1,6 @@
-package com.goit.url_shortener.user;
+package com.goit.url_shortener.repository;
 
+import com.goit.url_shortener.user.User;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

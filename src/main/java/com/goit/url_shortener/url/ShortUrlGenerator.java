@@ -1,6 +1,7 @@
 package com.goit.url_shortener.url;
 
 import org.springframework.stereotype.Service;
+import org.springframework.beans.factory.annotation.Value;
 
 import java.util.Random;
 
@@ -32,7 +33,11 @@ public class ShortUrlGenerator {
      * Maximum length of the generated short URL.
      */
     private static final int MAX_SHORT_URL_LENGTH = 8;
-
+    /**
+     * Base URL for generating full short URLs (зчитується з application.properties або встановлюється за замовчуванням).
+     */
+    @Value("${app.base-url}")
+    private String baseUrl;
     /**
      * Generates a random short URL.
      * <p>
@@ -52,7 +57,7 @@ public class ShortUrlGenerator {
             int randomIndex = random.nextInt(CHARACTERS.length);
             shortUrl.append(CHARACTERS[randomIndex]);
         }
-        return "https://" + shortUrl;
+        return String.format("%s/%s", baseUrl, shortUrl);
     }
 }
 

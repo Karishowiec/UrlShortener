@@ -1,7 +1,8 @@
-package com.goit.url_shortener.statistics;
+package com.goit.url_shortener.repository;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
+import com.goit.url_shortener.statistics.StatsUrlDto;
 import lombok.Data;
 import org.springframework.http.HttpStatus;
 

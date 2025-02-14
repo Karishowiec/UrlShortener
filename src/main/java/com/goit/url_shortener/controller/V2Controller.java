@@ -1,4 +1,4 @@
-package com.goit.url_shortener.v2;
+package com.goit.url_shortener.controller;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
